@@ -7,7 +7,7 @@ const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
   const clickHandler = () => {
     setTitle('new title')
-    console.log(title);
+    // console.log(title);
   };
   console.log('ExpenseItem evaluated');
   return (
