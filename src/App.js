@@ -28,12 +28,16 @@ const App = () => {
 
   const [expenses, setExpenses] = useState(DUMMY_EXPENSE_DATA);
   const addExpenseHandler = (expense) =>{
-    console.log('In App.js');
-    console.log(expense);
     setExpenses(prevExpenses => 
       [expense, ...prevExpenses] );
 
   }
+
+  // const selectedYearHandler = (yearSelected) => {
+  //   // setExpenses(prevExpenses =>
+  //   //   prevExpenses.filter(expense => expense.date.getFullYear() === yearSelected))
+  //   console.log(yearSelected)
+  // }
 
   return (
     <div>
